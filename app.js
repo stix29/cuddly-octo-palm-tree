@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const private = require("./private.json");
 const fs = require("fs")
 
-client.login(private.token)
+client.login(process.env.BOT_TOKEN)
 
 client.on("ready", async() =>{
     console.log("It's a beautiful day to save lives!")
